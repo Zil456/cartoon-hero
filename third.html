@@ -17,5 +17,60 @@
     <p id="my_text">
       Hello, world!
     </p>
+    <script>
+        studentYear = 1;
+        if (studentYear === 1) {
+            document.write ("You are in year 1");
+        }
+        else if (studentYear === 2) {
+            document.write("You are in year 2");
+        }
+        else {
+            document.write("You are in year 3")
+        }
+    </script>
+    <script>
+        studentYear = 2;        
+        switch (studentYear) {
+            case 1:
+                document.write("You are in year 1")
+                break
+            case 2: 
+                document.write("You are in year 2")
+                break
+            case 3: 
+                document.write("You are in year 1")
+                break
+            default: 
+                document.write("Please check your typing")
+        } 
+
+    </script>
+    <p>
+        <script>
+            for (var i = 0; i <=20; i++) {
+                document.write(i + "<br>")
+            }
+        </script>
+    </p>
+    <p>
+        <script>
+            var names = ["Lisa", "Arturo", "Kimia", "Kevin"];
+            for (var name of names) {
+                document.write(name + "<br>");
+            }
+        </script>
+    </p>
+    <p>
+        <script>
+            let q = 1;
+            while (q < 15) {
+                document.write(q + "<br>");
+                q+=1;
+            }
+
+            
+        </script>
+    </p>
   </body>
 </html>
