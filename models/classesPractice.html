@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Page Title</title>
+
+</head>
+<body>
+    <script>
+
+        class Rectangle {
+            // in the constructor, you pass in your parameters,
+            // just like in python
+            constructor (_width, _height, _color) {
+                console.log("Rectangle is being created")
+
+                this.width = _width;
+                this.height = _height;
+                this.color = _color; 
+            }
+            // above we have instance properties which have eg., name, age, height
+            // below we have instance properties which can talk, run, jump and they
+            // use the instance properties to achieve that
+
+            //  now we will create instance methods which gives us the area of the 
+            //  rectangle being created. we use the following method for that
+            getArea () {
+                return this.width * this.height;
+            }
+
+            // now let's create a method that will print the description
+            // of the method
+            printDescription () {
+                console.log(`I am a rectangle of ${this.width} x ${this.height} and I am ${this.color}`);
+            }
+
+        }
+
+        // without the below code, the console will not show anything
+        // so, now if you save and refresh the browser and run the below code
+        // you will see what the width is 5, height is 3 and the color is blue
+
+
+        let myRectangle1 = new Rectangle(5, 3, "blue");
+        let myRectangle2 = new Rectangle(10, 5, "red");
+
+        // to get the area of our rectangle displayed in the console we
+        // do this, just like in python:
+        console.log(myRectangle1.getArea());
+        console.log(myRectangle2.getArea());
+
+        myRectangle1.printDescription();
+    </script>
+    
+</body>
+</html>

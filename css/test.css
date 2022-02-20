@@ -1,9 +1,9 @@
 body{
     background-color: lightgrey;
 }
-h1{
-    font-size: 30px;
-    color: teal;
+h1.first{
+    font-size: 90px;
+    color: rgb(7, 61, 61);
 }
 h2{
     color: red;
@@ -20,4 +20,12 @@ h2{
 }
 span{
     color: violet;
+}
+.second{
+    color: brown;
+    font-size: 45px;
+}
+
+li {
+    list-style: square;
 }

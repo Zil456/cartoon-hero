@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <head>
+    <link href="./css/test.css" rel="stylesheet">
+    <!-- below is one way of adding CSS to a html
+    without creating a separate file. I styles the 
+    entie h1 block. Alternatively, you can add style to the opening
+    tag of the p or h1-->
+    <style>
+        h1 {
+            color: blueviolet;
+            font-size: 30px;
+            font-style: italic;
+        }
+    </style>
     <title>Second page</title>
 </head>
 <body>
-    <h1>My Personal <em>Web</em> Page</h1>
+    <h1 class="first">My Personal <em>Web</em> Page</h1>
+    <h1 class="second">My personal space</h1>
+    <h1>Normal space</h1>
     <p>Images are easy. You can get the Wikipedia Logo <a href="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" style="color: aqua;">here</a>
     
     
     <h2><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" width="200" height="200" >
     </h2>
-    <h3> This is the <u>third</u> heading</h3>
+    <h3 style="color: red; font-size: 40px;"> This is the <u>third</u> heading</h3>
     <p>Your ad <strike>could</strike> be here!</p>
     <!--The element below is a list-->
     <ol>
